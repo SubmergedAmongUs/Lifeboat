@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)Framework\Framework.csproj" />
+        <ProjectReference Include="$(SolutionDir)Submerged\Submerged.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Compile Remove="Roles\NeutralRoles\AmnesiacRole\**" />
+        <EmbeddedResource Remove="Roles\NeutralRoles\AmnesiacRole\**" />
+        <None Remove="Roles\NeutralRoles\AmnesiacRole\**" />
+        <Compile Remove="Roles\CrewmateRoles\EngineerRole\Buttons\VentButton.cs" />
+    </ItemGroup>
+</Project>
